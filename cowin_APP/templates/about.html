@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block content %}
+    <style>
+        body{
+  margin: 0;
+  padding: 0;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+}
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p{
+  text-align: justify;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #b9b9b9;
+</style>
+<h1>About Page</h1>
+<meta charset="utf-8">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>About Us</title>
+  </head>
+  <body>
+<div class="box">
+  <img src="{{url_for('static', filename='profile.jpg')}}" alt="" class="box-img">
+  <h1>
+Mohammad Irshad</h1>
+<h5>
+Python Developer</h5>
+<p>
+I am a Software Developer At Wipro.Love To Code and Create.</p>
+<ul>
+<li><a href="https://www.facebook.com/irsad.khan.549/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+<li><a href="https://github.com/khanirsad628"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+<li><a href="www.linkedin.com/in/mohammad-irshad-b8a550105"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+{% endblock content %}
